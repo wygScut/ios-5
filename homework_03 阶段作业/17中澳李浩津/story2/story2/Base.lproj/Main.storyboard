@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="story2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QrE-j6-AUF" userLabel="shelf1">
+                                <rect key="frame" x="30" y="134" width="354" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t02-5l-L51" userLabel="search stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="85"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="uvw-Oj-gic">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="53" id="9jQ-AW-MN9"/>
+                                                    <constraint firstAttribute="height" constant="53" id="IHx-bO-A7j"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqo-DX-wbN">
+                                                <rect key="frame" x="3.5" y="53" width="46" height="32"/>
+                                                <state key="normal" title="扫一扫"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iVz-Os-RFJ" userLabel="recMoney stack">
+                                        <rect key="frame" x="100.5" y="0.0" width="53" height="85"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="BbI-eh-xeJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="GuR-dc-rRV"/>
+                                                    <constraint firstAttribute="width" constant="53" id="v78-wi-9hJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-ck-Mss">
+                                                <rect key="frame" x="11" y="53" width="31" height="32"/>
+                                                <state key="normal" title="收钱"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vEG-QE-fIB" userLabel="card stack">
+                                        <rect key="frame" x="200.5" y="0.0" width="53" height="85"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="STv-ar-qrM">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="53" id="eBo-te-WP8"/>
+                                                    <constraint firstAttribute="height" constant="53" id="muq-hS-zvh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlG-V7-wWn">
+                                                <rect key="frame" x="11" y="53" width="31" height="32"/>
+                                                <state key="normal" title="卡包"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="69V-rY-DQi" userLabel="pay stack">
+                                        <rect key="frame" x="301" y="0.0" width="53" height="85"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="b5B-3B-hAy">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="53" id="Xee-jP-hye"/>
+                                                    <constraint firstAttribute="height" constant="53" id="p4l-oi-G33"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rl-rH-eWN">
+                                                <rect key="frame" x="11" y="53" width="31" height="32"/>
+                                                <state key="normal" title="付钱"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="B7g-bw-yei" userLabel="shelf2" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="30" y="257" width="354" height="84"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-T3-jqw" userLabel="sendMoney stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="84"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="nkT-am-J4T">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="53" id="A4e-ac-Vhw"/>
+                                                    <constraint firstAttribute="height" constant="53" id="EQE-dd-AGC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-Ph-a4a">
+                                                <rect key="frame" x="11" y="54" width="31" height="30"/>
+                                                <state key="normal" title="转账"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1n2-ld-iEl" userLabel="payByCard stack">
+                                        <rect key="frame" x="89.5" y="0.0" width="77" height="84"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="kPu-fk-zS3">
+                                                <rect key="frame" x="12" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="MLC-NY-oh9"/>
+                                                    <constraint firstAttribute="width" constant="53" id="X73-Ka-NLd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6S-l3-BmL">
+                                                <rect key="frame" x="0.0" y="53" width="77" height="31"/>
+                                                <state key="normal" title="信用卡还贷"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Ba-E1-DRV" userLabel="addMoney stack">
+                                        <rect key="frame" x="202.5" y="0.0" width="62" height="84"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-lm-CkK">
+                                                <rect key="frame" x="4.5" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="QuP-Cp-zwI"/>
+                                                    <constraint firstAttribute="width" constant="53" id="a4x-Db-TCG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHF-uB-KE5">
+                                                <rect key="frame" x="0.0" y="54" width="62" height="30"/>
+                                                <state key="normal" title="充值中心"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="t89-S0-3ga" userLabel="yuebao stack">
+                                        <rect key="frame" x="301" y="0.0" width="53" height="84"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="rml-1d-zhV">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="53" id="fzn-wx-lkk"/>
+                                                    <constraint firstAttribute="height" constant="53" id="gL6-fX-Szy"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKX-VH-QSZ">
+                                                <rect key="frame" x="3.5" y="54" width="46" height="30"/>
+                                                <state key="normal" title="余额宝"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83792098449999997" green="0.60305161470000002" blue="0.78479863530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="EAN-v0-IQ8">
+                                <rect key="frame" x="30" y="74" width="247" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6Jg-n6-gD8"/>
+                                    <constraint firstAttribute="width" constant="247" id="G0p-mW-Opz"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Fr-0zQ">
+                                <rect key="frame" x="98" y="548" width="218" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="7YE-UO-Vuo"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZwY-uh-l32"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="xAf-3L-AFA"/>
+                                    <constraint firstAttribute="width" constant="218" id="yvn-te-yks"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2F-em-Liu">
+                                <rect key="frame" x="98" y="503" width="218" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CAB-1P-Dmu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Fl7-zv-Djz"/>
+                                    <constraint firstAttribute="width" constant="218" id="PC1-sv-byf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="u9j-39-ucn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXx-30-Fbc">
+                                <rect key="frame" x="189" y="593" width="36" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LsG-8K-a2i"/>
+                                    <constraint firstAttribute="width" constant="36" id="OMo-19-QDb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="Xi3-0H-S44"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hYT-6p-c8S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="确定">
+                                    <color key="titleColor" red="0.83792098449999997" green="0.60305161470000002" blue="0.78479863530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNr-cB-Rpy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="用户登录" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZn-zP-l6X">
+                                <rect key="frame" x="158.5" y="433" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BDm-fD-3ip"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="Etr-Rc-8Lf"/>
+                                    <constraint firstAttribute="width" constant="97" id="esR-9k-bgb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="t5X-Ik-Zbw"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tips：用户名输入“lee”，密码为“123” " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqv-zj-cAx">
+                                <rect key="frame" x="63" y="704" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CDj-sy-uXp"/>
+                                    <constraint firstAttribute="width" constant="288" id="l1z-6h-wAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入错误，会出现提示信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-Vn-BZ1">
+                                <rect key="frame" x="103" y="736" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="lh0-sM-DJc"/>
+                                    <constraint firstAttribute="height" constant="21" id="n9p-6H-suG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="welcome to alipay" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2p-51-gZX">
+                                <rect key="frame" x="84" y="644" width="232" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="Zzg-Pd-raR"/>
+                                    <constraint firstAttribute="height" constant="39" id="ud7-3O-NUU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eqv-zj-cAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2m1-np-yNd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QrE-j6-AUF" secondAttribute="trailing" constant="30" id="6I8-rA-Ri4"/>
+                            <constraint firstItem="X2l-Vn-BZ1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Hy-1G-TKH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B7g-bw-yei" secondAttribute="trailing" constant="30" id="FcT-fU-brp"/>
+                            <constraint firstAttribute="bottom" secondItem="e2p-51-gZX" secondAttribute="bottom" constant="214" id="L3l-GJ-60J"/>
+                            <constraint firstItem="EAN-v0-IQ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NHG-CR-od5"/>
+                            <constraint firstItem="LXx-30-Fbc" firstAttribute="top" secondItem="bHk-Fr-0zQ" secondAttribute="bottom" constant="15" id="OuS-6c-F60"/>
+                            <constraint firstItem="X2l-Vn-BZ1" firstAttribute="top" secondItem="Eqv-zj-cAx" secondAttribute="bottom" constant="11" id="Ovr-B8-Ux3"/>
+                            <constraint firstItem="EAN-v0-IQ8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Rw9-Ga-HMl"/>
+                            <constraint firstItem="VZn-zP-l6X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uon-6G-cCT"/>
+                            <constraint firstItem="bHk-Fr-0zQ" firstAttribute="top" secondItem="e2F-em-Liu" secondAttribute="bottom" constant="15" id="Vwg-WN-X2e"/>
+                            <constraint firstItem="bHk-Fr-0zQ" firstAttribute="centerX" secondItem="e2F-em-Liu" secondAttribute="centerX" id="WY9-We-0oQ"/>
+                            <constraint firstItem="B7g-bw-yei" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Wo1-qd-1Hr"/>
+                            <constraint firstItem="QrE-j6-AUF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="a8L-HE-pKN"/>
+                            <constraint firstItem="QrE-j6-AUF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="anJ-I5-Ffi"/>
+                            <constraint firstItem="Eqv-zj-cAx" firstAttribute="top" secondItem="e2p-51-gZX" secondAttribute="bottom" constant="22" id="auB-7f-KSa"/>
+                            <constraint firstItem="e2p-51-gZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bhi-wr-Mod"/>
+                            <constraint firstItem="e2F-em-Liu" firstAttribute="centerX" secondItem="VZn-zP-l6X" secondAttribute="centerX" id="iMK-S5-KE4"/>
+                            <constraint firstItem="VZn-zP-l6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pTa-ZN-sd4"/>
+                            <constraint firstItem="e2p-51-gZX" firstAttribute="top" secondItem="LXx-30-Fbc" secondAttribute="bottom" constant="20" id="tu8-G8-nle"/>
+                            <constraint firstItem="LXx-30-Fbc" firstAttribute="centerX" secondItem="bHk-Fr-0zQ" secondAttribute="centerX" id="urc-eR-Dkh"/>
+                            <constraint firstItem="VZn-zP-l6X" firstAttribute="top" secondItem="B7g-bw-yei" secondAttribute="bottom" constant="90" id="vg1-J0-2kh"/>
+                            <constraint firstItem="B7g-bw-yei" firstAttribute="top" secondItem="QrE-j6-AUF" secondAttribute="bottom" constant="40" id="wFf-3P-n2m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" colorLabel="IBBuiltInLabel-Orange"/>
+                    </view>
+                    <connections>
+                        <outlet property="textname" destination="e2F-em-Liu" id="Jme-ws-oe2"/>
+                        <outlet property="textpassward" destination="bHk-Fr-0zQ" id="TB8-WV-6hN"/>
+                        <outlet property="welcome_text" destination="e2p-51-gZX" id="58i-L1-hU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="200" height="200"/>
+        <image name="2" width="200" height="200"/>
+        <image name="3" width="200" height="200"/>
+        <image name="4" width="200" height="200"/>
+        <image name="5" width="200" height="200"/>
+        <image name="6" width="200" height="200"/>
+        <image name="7" width="200" height="200"/>
+        <image name="8" width="200" height="200"/>
+    </resources>
+</document>
